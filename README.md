@@ -1,12 +1,39 @@
-Build fdos package:
+Build FreeDOS Package [FDPKG] for AnimatorPro.
+===
 
-Download AnimatorAKA.zip from https://github.com/AnimatorPro/Animator-Pro/downloads and run create_package.sh
+Dependencies
+---
 
-This will create a build/ANIMATOR.ZIP
+ - cURL
+
+Build
+---
+
+```sh
+./create_fdpg.sh 
+Download:
+✓ AA.CFG
+✓ CROP.EXE
+✓ V.EXE
+
+Verify:
+✓ AA.CFG
+✓ CROP.EXE
+✓ V.EXE
+
+Package:
+✓ ANIMATOR.ZIP
+```
 
 
-In a DOS prompt (freedos / dosemu etc) Install ANIMATOR.zip package:
+Install
+---
 
-```fdinst install animator.zip```
+Copy ANIMATOR.ZIP to a running DOS (on actual hardware, or dosemu / dosbox).
 
-This adds shortcuts ANIMATOR, CROP and APLAY
+
+At the DOS prompt install Animator:
+
+```sh
+$ fdinst install animator.zip
+```
